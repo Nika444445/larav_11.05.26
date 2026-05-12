@@ -10,9 +10,9 @@ use App\Models\Main;
 class MainController extends Controller
 {
     public function index(){
-
+        $text = "Главная страница";
         $main = Main::all();
-        return view('front.main',['main'=>$main]);
+        return view('front.main',['main'=>$main,'text' => $text]);
     }
 }
 

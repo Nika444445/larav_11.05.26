@@ -8,8 +8,9 @@ class UserController extends Controller
 {
     //
     public function index (){
+        $text = "Главная страница";
         $my_nam = "Tom";
-        return view ('user',['name'=> $my_nam]);
+        return view ('user',['name'=> $my_nam,'text' => $text]);
     }
 
     public function person()
